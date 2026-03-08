@@ -158,7 +158,7 @@ pathways using the KEGG database. In this study, the g:Profiler was used for GO 
 ![Fig 4A1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_UP.png)
 ![Fig 4A2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_DOWN.png)
 - **B. GO Enrichment E11.5 vs E13.5**
-![Fig 4B1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E11_5_DOWN.png)
+![Fig 4B1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/dff60cd98a21c1b4cb6cfb291f7d1b7cd9b9031a/figures/gProfiler_E13_5_vs_E11_5_UP.png)
 ![Fig 4B2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E11_5_DOWN.png)
 - **C. GO Enrichment E9.5 vs E13.5**
 ![Fig 4C1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_UP.png)
@@ -177,6 +177,7 @@ Functional enrichment analysis further revealed that these DEGs are significantl
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
