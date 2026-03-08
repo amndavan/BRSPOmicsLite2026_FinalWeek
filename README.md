@@ -109,43 +109,47 @@ between log₂ fold change and mean log₂ expression levels, highlighting signi
 clustering based on global gene expression profiles. Control samples (green) and DF+DHF samples (purple)
 form distinct clusters, indicating clear transcriptomic differences between groups (C).
 
-The top 10 DEGs are listed in Table 1, and the complete DEG list is available in the GitHub repository.
+The top 5 DEGs are listed in Table 1, and the complete DEG list is available in the GitHub repository.
 
-### :small_red_triangle: Upregulated Genes
+## :small_red_triangle: Top Upregulated Genes
 
-| Comparison            | Gene Symbol | LogFC | adj.P.value |
-|----------------------|-------------|-------|-------------|
-| E11.5 vs E9.5       | IFI44       | 2.1007 | 0.0392 |
-| E11.5 vs E9.5       | POLR1A      | 1.9602 | 0.0457 |
-| E11.5 vs E9.5       | CD38        | 1.9246 | 0.0456 |
-| E11.5 vs E9.5       | SLAMF7      | 1.7070 | 0.0483 |
-| E11.5 vs E9.5       | IRF4        | 1.5431 | 0.0443 |
-| E13.5 vs E11.5      | MLEC        | 1.5113 | 0.0127 |
-| E13.5 vs E11.5      | MANEA       | 1.4876 | 0.0483 |
-| E13.5 vs E11.5      | PDIA6       | 1.4109 | 0.0490 |
-| E13.5 vs E11.5      | PRRC1       | 1.3450 | 0.0457 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
+| Comparison | Gene Symbol | logFC | adj.P.Val |
+|------------|-------------|-------|-----------|
+| E11.5 vs E9.5 | Cryl1 | 6.7859 | 5.05e-14 |
+| E11.5 vs E9.5 | E2f5 | 5.6753 | 1.28e-13 |
+| E11.5 vs E9.5 | 8430408G22Rik | 5.5746 | 1.11e-13 |
+| E11.5 vs E9.5 | Ttr | 5.4774 | 1.70e-14 |
+| E11.5 vs E9.5 | Bcl11a | 5.3282 | 9.34e-17 |
+| E13.5 vs E9.5 | Ttr | 8.5261 | 4.27e-19 |
+| E13.5 vs E9.5 | Nfix | 6.6159 | 6.59e-19 |
+| E13.5 vs E9.5 | Bcl11b | 6.5870 | 3.64e-19 |
+| E13.5 vs E9.5 | Dcn | 6.3378 | 1.16e-18 |
+| E13.5 vs E9.5 | Tnnc1 | 6.0934 | 4.89e-18 |
+| E13.5 vs E11.5 | Tnnc1 | 6.0517 | 2.18e-16 |
+| E13.5 vs E11.5 | Myl1 | 5.7646 | 5.57e-16 |
+| E13.5 vs E11.5 | Actc1 | 5.6577 | 1.49e-18 |
+| E13.5 vs E11.5 | Lect1 | 5.4424 | 9.68e-17 |
+| E13.5 vs E11.5 | Dcn | 5.1055 | 1.05e-15 |
 
-### :small_blue_diamond: Downregulated Genes
+## :small_blue_diamond: Top Downregulated Genes
 
-| Comparison            | Gene Symbol | LogFC | adj.P.value |
-|----------------------|-------------|-------|-------------|
-| E11.5 vs E9.5       | IFI44       | 2.1007 | 0.0392 |
-| E11.5 vs E9.5       | POLR1A      | 1.9602 | 0.0457 |
-| E11.5 vs E9.5       | CD38        | 1.9246 | 0.0456 |
-| E11.5 vs E9.5       | SLAMF7      | 1.7070 | 0.0483 |
-| E11.5 vs E9.5       | IRF4        | 1.5431 | 0.0443 |
-| E13.5 vs E11.5      | MLEC        | 1.5113 | 0.0127 |
-| E13.5 vs E11.5      | MANEA       | 1.4876 | 0.0483 |
-| E13.5 vs E11.5      | PDIA6       | 1.4109 | 0.0490 |
-| E13.5 vs E11.5      | PRRC1       | 1.3450 | 0.0457 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
-| E11.5 vs E13.5      | C1GALT1C1   | 1.3193 | 0.0411 |
+| Comparison | Gene Symbol | logFC | adj.P.Val |
+|------------|-------------|-------|-----------|
+| E11.5 vs E9.5 | Lin28a | -5.4364 | 1.17e-16 |
+| E11.5 vs E9.5 | Car4 | -4.4346 | 1.00e-13 |
+| E11.5 vs E9.5 | Prtg | -4.0786 | 4.64e-15 |
+| E11.5 vs E9.5 | Lrp2 | -3.4446 | 4.84e-13 |
+| E11.5 vs E9.5 | Irs4 | -3.3348 | 7.42e-12 |
+| E13.5 vs E9.5 | Lin28a | -7.6751 | 2.90e-20 |
+| E13.5 vs E9.5 | Prtg | -5.5422 | 5.21e-19 |
+| E13.5 vs E9.5 | Car4 | -5.1345 | 1.38e-16 |
+| E13.5 vs E9.5 | Sall4 | -5.0011 | 2.35e-17 |
+| E13.5 vs E9.5 | Hbb-bh1 | -4.7464 | 2.40e-15 |
+| E13.5 vs E11.5 | Cryl1 | -7.0318 | 9.48e-15 |
+| E13.5 vs E11.5 | 8430408G22Rik | -5.5809 | 4.64e-14 |
+| E13.5 vs E11.5 | E2f5 | -5.2108 | 1.94e-13 |
+| E13.5 vs E11.5 | Hemgn | -5.1857 | 4.86e-12 |
+| E13.5 vs E11.5 | Aph1a | -4.7634 | 9.68e-17 |
 
 ### Biological Interpretation
 Gene Ontology (GO) enrichment analysis was performed to identify the
@@ -196,3 +200,4 @@ observed transcriptional alterations.
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
