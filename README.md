@@ -166,6 +166,12 @@ pathways using the KEGG database. In this study, the g:Profiler was used for GO 
 > Figure 4. Functional enrichment analysis of differentially expressed genes (DEGs) in GSE8091. Bar
 plots show the top significantly enriched based on Gene Ontology (GO) for Biological Process (BP), Cellular Component (CC), and Molecular Function (MF) accross developmental stages.
 
+According to the Gene Ontology (GO) enrichment analysis, the upregulated genes during the early transition of embryonic development from E9.5 to E11.5 are primarily associated with protein binding in Molecular Function (MF), system development in Biological Process (BP), and synapse-related components in Cellular Component (CC). In contrast, the downregulated genes are mainly enriched in binding and nucleic acid catalytic activity (MF), primary metabolic processes (BP), and intracellular anatomical structures (CC). This pattern is consistent with developmental progression, as early embryonic stages typically involve increased regulation of differentiation and tissue organization, while basic metabolic and nucleic acid–related activities become relatively less dominant.
+
+In the later developmental stage comparison, the upregulated genes remain strongly associated with protein binding (MF), system development (BP), and cytoplasmic components (CC). Meanwhile, the downregulated genes are enriched in protein binding (MF), regulation of primary metabolic processes and the cell cycle (BP), and intracellular anatomical structures (CC). This observation is reasonable because as development progresses, cells gradually shift from rapid proliferation and metabolic activity toward more specialized cellular functions and structural organization.
+
+For the broader comparison between the early and late stages (E9.5 vs E13.5), the upregulated genes are again dominated by protein binding (MF), system development (BP), and synapse-related structures (CC). The downregulated genes are enriched in binding functions (MF), cell cycle and primary metabolic processes (BP), and intracellular anatomical structures (CC). This trend aligns with developmental biology principles, as later embryonic stages involve increasing neuronal differentiation and synaptic formation, while proliferative and general metabolic activities become less prominent relative to specialized developmental processes.
+
 ## F. Conclusion
 In conclusion, the present analysis demonstrates that there was indeed changes related to developmental stages.
 Functional enrichment analysis further revealed that these DEGs are significantly associated with.
@@ -177,6 +183,7 @@ Functional enrichment analysis further revealed that these DEGs are significantl
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
