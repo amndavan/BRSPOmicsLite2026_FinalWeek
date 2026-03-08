@@ -75,22 +75,22 @@ The boxplots (Figure 1A) showed very similar distributions across all samples, w
 
 The UMAP projection (Figure 1B) revealed clear clustering of samples according to their developmental stages. Samples from E9.5 clustered together and were clearly separated from those at E11.5 and E13.5, indicating distinct gene expression profiles at this early stage. Similarly, E11.5 and E13.5 samples formed their own clusters, demonstrating progressive transcriptomic changes as brain development proceeded. The separation between clusters suggested that developmental stage was a major factor driving variation in gene expression within the dataset. Overall, the distinct grouping of samples confirms strong stage-specific transcriptional signatures during early mouse brain development.
 
-- **A**
+- **A. Normalization boxplot**
 
 ![Fig 1A.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Boxplot%20Normalization.png)
-- **B**
+- **B. UMAP across developmental stages**
 ![Fig 1B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/UMAP.png)
-- **C**
+- **C. Venn plot showing DEG intersection**
 ![Fig 1C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/bb0296a18884303b2a58bc22ee06395d2aa40a69/figures/VennPlot.png)
 > Figure 1. Boxplot showing the distribution of log2-transformed gene expression values across all samples (GSMs). Each boxplot represents the expression distribution for one sample, where the median, interquartile range, and overall spread of the data are displayed. The red dashed line indicates the overall median expression level across samples (A). UMAP projection of samples based on their gene expression profiles, colored according to developmental stage (E9.5, E11.5, and E13.5) (B). The Venn diagram illustrates the number of genes uniquely expressed at three embryonic stages (E9.5, E11.5, and E13.5). The intersections represent genes shared between stages (C).
 
 After applying the selection criteria and removing blank array results and duplicate entries, a total number of differentially expressed genes (DEGs) were identified across the developmental stages. A large number of genes showed significant differential expression between the stages. Many genes were strongly upregulated in E13.5, while another subset was significantly downregulated compared with E9.5. Similar patterns of differential expression were also observed in the comparisons between E9.5 vs E11.5 and E11.5 vs E13.5 (Figure 2A-C). The wide distribution of significant genes indicated substantial transcriptomic changes between these developmental stages, reflecting major biological transitions during the developmental process. However, the proportions of upregulated and downregulated genes between stages were relatively balanced, with slightly more upregulated genes observed in the E13.5 vs E9.5 comparison. This pattern is theoretically understandable, as E9.5 represents an early developmental stage, whereas E13.5 corresponds to a later stage approaching maturation. A similar trend in gene expression changes was also reported in the original study.
 
-- **A**
+- **A. E9.5**
 ![Fig 2A.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E11_5%20vs%20E9_5.png)
-- **B**
+- **B. E11.5**
 ![Fig 2B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E11_5.png)
-- **C**
+- **C. E13.5**
 ![Fig 2C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E9_5.png)
 > Figure 2A-C. Volcano plot showing differentially expressed genes between developmental stages. The x-axis represented the log fold change (logFC), while the y-axis showed the statistical significance expressed as −log10(adjusted p-value). Genes that were significantly upregulated in were highlighted in red, whereas significantly downregulated genes were shown in blue. Genes that did not meet the significance thresholds were displayed in grey (Padj≤0.05).
 
@@ -154,13 +154,13 @@ Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis was
 conducted to reveal gene–gene interactions and their involvement in molecular
 pathways using the KEGG database. In this study, the g:Profiler was used for GO enrichment.
 
-- **A**
+- **A. GO Enrichment E9.5 vs E11.5**
 ![Fig 4A1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_UP.png)
 ![Fig 4A2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_DOWN.png)
-- **B**
+- **B. GO Enrichment E11.5 vs E13.5**
 ![Fig 4B1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E11_5_DOWN.png)
 ![Fig 4B2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E11_5_DOWN.png)
-- **C**
+- **C. GO Enrichment E9.5 vs E13.5**
 ![Fig 4C1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_UP.png)
 ![Fig 4C2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_DOWN.png)
 > Figure 4. Functional enrichment analysis of differentially expressed genes (DEGs) in GSE8091. Bar
@@ -177,6 +177,7 @@ Functional enrichment analysis further revealed that these DEGs are significantl
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
