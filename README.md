@@ -90,7 +90,7 @@ form distinct clusters, indicating clear transcriptomic differences between grou
 ![Fig 2B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E11_5.png)
 - **C**
 ![Fig 2C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E9_5.png)
-> Figure 1. Volcano plot showing differentially expressed genes between Control and DF+DHF patients. Red dots
+> Figure 2. Volcano plot showing differentially expressed genes between Control and DF+DHF patients. Red dots
 represent significantly upregulated genes, blue dots represent significantly downregulated genes, and
 black dots indicate non-significant genes (Padj≤0.05) (A). MA plot displaying the relationship
 between log₂ fold change and mean log₂ expression levels, highlighting significantly upregulated
@@ -99,7 +99,7 @@ clustering based on global gene expression profiles. Control samples (purple) an
 form distinct clusters, indicating clear transcriptomic differences between groups (C).
 
 
-![Fig 2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Heatmap.png)
+![Fig 3.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Heatmap.png)
 > Figure 2. Differential expression and sample clustering analysis of GSE18090 (Control vs Patient).
 Volcano plot showing differentially expressed genes between Control and Patient samples. Red dots
 represent significantly upregulated genes, blue dots represent significantly downregulated genes, and
@@ -160,14 +160,15 @@ pathways using the KEGG database. In this study, the Enrichr comprehensive
 database was used for both analyses. 
 
 - **A**
-![Fig 3A.](https://github.com/amndavan/BRSPOmicsLite2026_Week3/blob/main/figures/KEGG_2026_bar_graph.svg)
+![Fig 4A1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_UP.png)
+![Fig 4A2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_DOWN.png)
 - **B**
-![Fig 3B.](https://github.com/amndavan/BRSPOmicsLite2026_Week3/blob/main/figures/GO_Biological_Process_2025_bar_graph.svg)
+![Fig 4B1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E11_5_DOWN.png)
+![Fig 4B2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E11_5_DOWN.png)
 - **C**
-![Fig 3C.](https://github.com/amndavan/BRSPOmicsLite2026_Week3/blob/main/figures/GO_Cellular_Component_2025_bar_graph.svg)
-- **D**
-![Fig 3D.](https://github.com/amndavan/BRSPOmicsLite2026_Week3/blob/main/figures/GO_Molecular_Function_2025_bar_graph.svg)
-> Figure 3. Functional enrichment analysis of differentially expressed genes (DEGs) in GSE18090. Bar
+![Fig 4C1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_UP.png)
+![Fig 4C2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_DOWN.png)
+> Figure 4. Functional enrichment analysis of differentially expressed genes (DEGs) in GSE18090. Bar
 plots show the top significantly enriched based on Gene Ontology (GO) and pathway analysis (A).
 Enriched categories include Biological Process (BP) (B), Cellular Component (CC) (C), and Molecular
 Function (MF) (D).
@@ -200,4 +201,5 @@ observed transcriptional alterations.
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
