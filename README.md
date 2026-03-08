@@ -91,7 +91,13 @@ After applying the selection criteria and removing blank array results and dupli
 ![Fig 2C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E9_5.png)
 > Figure 2A-C. Volcano plot showing differentially expressed genes between developmental stages. The x-axis represented the log fold change (logFC), while the y-axis showed the statistical significance expressed as −log10(adjusted p-value). Genes that were significantly upregulated in were highlighted in red, whereas significantly downregulated genes were shown in blue. Genes that did not meet the significance thresholds were displayed in grey (Padj≤0.05).
 
+The heatmap of the top 100 differentially expressed genes (DEGs) from the GSE8091 (Figure 3) reveals clear stage-specific gene expression patterns during mouse embryonic development. Hierarchical clustering separates the samples into groups corresponding to the developmental stages E9.5, E11.5, and E13.5, indicating that transcriptional profiles progressively change as development proceeds. Two major expression patterns can be observed:
+- Genes highly expressed at early stages (E9.5) and repressed at later stages (E11.5–E13.5). A group of genes shows strong expression at E9.5, followed by a gradual reduction in expression at E11.5 and E13.5. This pattern suggests that these genes play roles in early embryonic growth, protein synthesis, and RNA processing, which are critical during the rapid cell division and metabolic activity characteristic of early development.
+Several of these genes are known to be involved in ribosome biogenesis and RNA metabolism. For example, _Ncl (Nucleolin)_ and _Pes1_ are involved in ribosomal RNA processing, while _Ddx18_ functions as an RNA helicase associated with ribosome assembly. Genes such as Eprs and Mars encode aminoacyl-tRNA synthetases that participate in protein translation, indicating active protein synthesis during early developmental stages.
+Additionally, regulatory genes such as _Lin28a_ and _Trim71_ are well known for their roles in stem cell maintenance and early embryonic development, suggesting that the early stage embryos maintain a transcriptional program associated with cell proliferation and developmental plasticity.
+- Genes upregulated at later developmental stages (E11.5–E13.5). Another cluster of genes shows the opposite pattern, where expression levels are relatively low at E9.5 but increase at E11.5 and become strongly upregulated at E13.5. This expression pattern suggests that these genes are activated during later stages of embryonic development, when tissues begin to differentiate and specialized cellular functions start to emerge. Several of these genes are known to play roles in neuronal differentiation, neural connectivity, and brain development. _Gad1_ encodes glutamate decarboxylase, an enzyme responsible for GABA synthesis, which is important in inhibitory neuronal signaling. _Ncam1_ encodes a neural cell adhesion molecule involved in neuronal migration and synaptic plasticity. _Foxp2_ is a transcription factor associated with neural circuit formation and brain development. Sema3f is part of the semaphorin family involved in axon guidance during neural development. _Kirrel3_ is linked to synapse formation and neural connectivity.
 
+However, while the expression patterns indicate potential involvement in neural development, conclusions cannot be drawn solely from visual inspection of the heatmap. To determine whether these genes are significantly associated with neurogenesis-related biological processes, further analysis such as Gene Ontology (GO) enrichment or pathway enrichment analysis is required. Such enrichment analysis would identify whether biological processes such as neuron differentiation, axon guidance, or synapse organization are statistically overrepresented among the upregulated and downregulated genes.
 
 ![Fig 3.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Heatmap.png)
 > Figure 3. Heatmap of the top 100 differentially expressed genes (DEGs) across mouse embryo developmental stages from the GSE8091 dataset.
@@ -113,7 +119,6 @@ The top 5 DEGs are listed in Table 1, and the complete DEG list is available in 
 | E13.5 vs E9.5 | Bcl11b | 6.5870 | 3.64e-19 |
 | E13.5 vs E9.5 | Dcn | 6.3378 | 1.16e-18 |
 | E13.5 vs E9.5 | Tnnc1 | 6.0934 | 4.89e-18 |
-| E13.5 vs E11.5 | Tnnc1 | 6.0517 | 2.18e-16 |
 | E13.5 vs E11.5 | Myl1 | 5.7646 | 5.57e-16 |
 | E13.5 vs E11.5 | Actc1 | 5.6577 | 1.49e-18 |
 | E13.5 vs E11.5 | Lect1 | 5.4424 | 9.68e-17 |
@@ -189,6 +194,7 @@ observed transcriptional alterations.
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
