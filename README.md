@@ -152,8 +152,7 @@ Gene Ontology (GO) enrichment analysis was performed to identify the
 biological function categories represented by the identified DEGs. In addition,
 Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis was
 conducted to reveal gene–gene interactions and their involvement in molecular
-pathways using the KEGG database. In this study, the Enrichr comprehensive
-database was used for both analyses. 
+pathways using the KEGG database. In this study, the g:Profiler was used for GO enrichment.
 
 - **A**
 ![Fig 4A1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E11_5_vs_E9_5_UP.png)
@@ -164,39 +163,21 @@ database was used for both analyses.
 - **C**
 ![Fig 4C1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_UP.png)
 ![Fig 4C2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/cb3b8500f87cc5989d1eb387b2dc5e04eea86b71/figures/gProfiler_E13_5_vs_E9_5_DOWN.png)
-> Figure 4. Functional enrichment analysis of differentially expressed genes (DEGs) in GSE18090. Bar
-plots show the top significantly enriched based on Gene Ontology (GO) and pathway analysis (A).
-Enriched categories include Biological Process (BP) (B), Cellular Component (CC) (C), and Molecular
-Function (MF) (D).
-
-The findings demonstrated that the DEGs were primarily enriched in pathways involved in viral replication and endoplasmic 
-reticulum (ER) protein processing, processes commonly utilized by viruses for protein folding and assembly and often 
-associated with ER stress. KEGG pathway analysis further highlighted alterations in pathways related to hematopoietic cell 
-lineages.
-
-GO enrichment analysis further indicated that these DEGs were involved in:
-| Biological Process | Cellular Component | Molecular Function |
-|:-----------|:------:|------:|
-| Response to Fibroblast Growth Factor | Specific Granule | Protein Kinase A Regulatory Subunit Binding |
-| Cellular Response to Epinephrine Stimulus | Calcium Channel Complex | Phospholipid Transfer Activity |
-| RNA Transport | Endoplasmic Reticulum Membrane | Ceramide 1-Phosphate Binding |
+> Figure 4. Functional enrichment analysis of differentially expressed genes (DEGs) in GSE8091. Bar
+plots show the top significantly enriched based on Gene Ontology (GO) for Biological Process (BP), Cellular Component (CC), and Molecular Function (MF) accross developmental stages.
 
 ## F. Conclusion
-In conclusion, the present analysis demonstrates that the DF condition is associated with significant 
-transcriptional alterations, characterized by both upregulated and downregulated genes compared to the control group.
-
-Functional enrichment analysis further revealed that these DEGs are significantly associated with pathways 
-related to protein processing in the endoplasmic reticulum (ER), highlighting how viruses exploit ER machinery 
-for protein folding and assembly, which may induce ER stress. These pathway enrichments are reflected in the 
-observed transcriptional alterations.
+In conclusion, the present analysis demonstrates that there was indeed changes related to developmental stages.
+Functional enrichment analysis further revealed that these DEGs are significantly associated with.
 
 ## G. References
 
-1. Lowe R, Shirley N, Bleackley M, Dolan S, Shafee T. (2017). *Transcriptomics technologies*. PLOS Computational Biology, 13(5), e1005457. https://doi.org/10.1371/journal.pcbi.1005457
-2. Nascimento EJ, Braga-Neto U, Calzavara-Silva CE, Gomes AL, et al. (2009). *Gene expression profiling during early acute febrile stage of dengue infection can predict disease outcome*. PLoS One, 4(11), e7892. https://doi.org/10.1371/journal.pone.0007892
+1. Hartl, Daniela, et al. (2008). *Transcriptome and Proteome Analysis of Early Embryonic Mouse Brain Development.* PROTEOMICS, 8(6) pp. 1257–1265. https://doi.org/10.1002/pmic.200700724.
+2. Lowe R, Shirley N, Bleackley M, Dolan S, Shafee T. (2017). *Transcriptomics technologies*. PLOS Computational Biology, 13(5), e1005457. https://doi.org/10.1371/journal.pcbi.1005457
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
