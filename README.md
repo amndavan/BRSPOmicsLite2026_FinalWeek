@@ -44,7 +44,13 @@ Title: Transcriptome and proteome analysis of early embryonic mouse brain develo
 
 Accession ID: GSE8091
 
-Problem statement
+This research primarily investigates transcriptomic and proteomic changes during development, with a particular focus on early mouse brain development. This topic is important because proper developmental progression requires precise regulation of gene expression, where specific genes must be accurately activated and deactivated to maintain the balance between cell proliferation and differentiation.
+
+In the developing brain, differentiation from neural progenitor cells (NPCs) begins around embryonic day 11.5 (E11.5), following an earlier phase of NPC expansion. The production of glial cells starts later, around E17. Understanding the spatiotemporal changes in gene and protein expression during these stages is important for uncovering the mechanisms underlying brain development. Such knowledge is particularly relevant because defects in neurogenesis have been linked to neurodegenerative diseases, including Alzheimer's disease, Parkinson's disease, and Huntington's disease.
+
+The study focuses on three key developmental stages: E9.5, E11.5, and E13.5. E9.5 was selected because neural progenitor cells are highly abundant at this stage. E11.5 represents the stage when NPCs begin to differentiate, while E13.5 corresponds to the peak of neurogenesis. The authors found that although the overall amount of protein remains relatively constant throughout development, the composition of gene products changes significantly. Here is a clearer and more formal paraphrase for a report:
+
+Within this Capstone Project, I aim to re-examine the findings reported by the authors using the analytical approaches and pipelines introduced in the BRSP Omicslite course from Week 1 to Week 3. By applying these methods, the goal is to reassess the dataset and evaluate whether similar patterns and conclusions can be reproduced through the analytical framework provided in the course.
 
 ## C. Samples and Grouping
 | Developmental Stage | Replicates (n) |
@@ -65,24 +71,17 @@ GEO2R Parameter
 
 ## E. Results and Discussion
 ### Differentially Expressed Genes (DEGs)
-After applying the selection criteria and removing blank array results and
-duplicate entries, a total of DEGs were identified in DF+DHF patients compared to
-controls (Figure 1A&1B). Among these, genes several were upregulated and were downregulated.
-Clustering analysis using UMAP (Figure 1C) showed that most DF+DHF and control
-samples didn't form distinct clusters based on their gene expression profiles. This pattern may reflect biological heterogeneity, 
-technical limitations in dimensionality reduction, or potential batch effects requiring further validation.
+The boxplots (Figure 1A) showed very similar distributions across all samples, with comparable medians and interquartile ranges. This indicated that the expression data were well normalized and that there were no obvious batch effects or major technical variations between samples. The consistency of the distributions suggested that the dataset was suitable for downstream analyses such as differential expression analysis.
+
+The UMAP projection (Figure 1B) revealed clear clustering of samples according to their developmental stages. Samples from E9.5 clustered together and were clearly separated from those at E11.5 and E13.5, indicating distinct gene expression profiles at this early stage. Similarly, E11.5 and E13.5 samples formed their own clusters, demonstrating progressive transcriptomic changes as brain development proceeded. The separation between clusters suggested that developmental stage was a major factor driving variation in gene expression within the dataset. Overall, the distinct grouping of samples confirms strong stage-specific transcriptional signatures during early mouse brain development.
 
 - **A**
 ![Fig 1A.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Boxplot%20Normalization.png)
-- **A**
+- **B**
 ![Fig 1B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/UMAP.png)
-> Figure 1. Volcano plot showing differentially expressed genes between Control and DF+DHF patients. Red dots
-represent significantly upregulated genes, blue dots represent significantly downregulated genes, and
-black dots indicate non-significant genes (Padj≤0.05) (A). MA plot displaying the relationship
-between log₂ fold change and mean log₂ expression levels, highlighting significantly upregulated
-(red) and downregulated (blue) genes (B). UMAP projection illustrating sample
-clustering based on global gene expression profiles. Control samples (purple) and DF+DHF samples (green)
-form distinct clusters, indicating clear transcriptomic differences between groups (C).
+> Figure 1. Boxplot showing the distribution of log2-transformed gene expression values across all samples (GSMs). Each boxplot represents the expression distribution for one sample, where the median, interquartile range, and overall spread of the data are displayed. The red dashed line indicates the overall median expression level across samples (A). UMAP projection of samples based on their gene expression profiles, colored according to developmental stage (E9.5, E11.5, and E13.5). UMAP is a dimensionality reduction technique used to visualize similarities and differences between high-dimensional transcriptomic data (B).
+
+After applying the selection criteria and removing blank array results and duplicate entries, a total number of differentially expressed genes (DEGs) were identified across the developmental stages. A large number of genes showed significant differential expression between the stages. Many genes were strongly upregulated in E13.5, while another subset was significantly downregulated compared with E9.5. Similar patterns of differential expression were also observed in the comparisons between E9.5 vs E11.5 and E11.5 vs E13.5 (Figure 2A-C). The wide distribution of significant genes indicated substantial transcriptomic changes between these developmental stages, reflecting major biological transitions during the developmental process. However, the proportions of upregulated and downregulated genes between stages were relatively balanced, with slightly more upregulated genes observed in the E13.5 vs E9.5 comparison. This pattern is theoretically understandable, as E9.5 represents an early developmental stage, whereas E13.5 corresponds to a later stage approaching maturation. A similar trend in gene expression changes was also reported in the original study.
 
 - **A**
 ![Fig 2A.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E11_5%20vs%20E9_5.png)
@@ -90,24 +89,13 @@ form distinct clusters, indicating clear transcriptomic differences between grou
 ![Fig 2B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E11_5.png)
 - **C**
 ![Fig 2C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/VOL%20Plot%20E13_5%20vs%20E9_5.png)
-> Figure 2. Volcano plot showing differentially expressed genes between Control and DF+DHF patients. Red dots
-represent significantly upregulated genes, blue dots represent significantly downregulated genes, and
-black dots indicate non-significant genes (Padj≤0.05) (A). MA plot displaying the relationship
-between log₂ fold change and mean log₂ expression levels, highlighting significantly upregulated
-(red) and downregulated (blue) genes (B). UMAP projection illustrating sample
-clustering based on global gene expression profiles. Control samples (purple) and DF+DHF samples (green)
-form distinct clusters, indicating clear transcriptomic differences between groups (C).
+> Figure 2A-C. Volcano plot showing differentially expressed genes between developmental stages. The x-axis represented the log fold change (logFC), while the y-axis showed the statistical significance expressed as −log10(adjusted p-value). Genes that were significantly upregulated in were highlighted in red, whereas significantly downregulated genes were shown in blue. Genes that did not meet the significance thresholds were displayed in grey (Padj≤0.05).
+
 
 
 ![Fig 3.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Heatmap.png)
-> Figure 2. Differential expression and sample clustering analysis of GSE18090 (Control vs Patient).
-Volcano plot showing differentially expressed genes between Control and Patient samples. Red dots
-represent significantly upregulated genes, blue dots represent significantly downregulated genes, and
-black dots indicate non-significant genes (Padj &lt; 0.05). (A) MA plot displaying the relationship
-between log₂ fold change and mean log₂ expression levels, highlighting significantly upregulated
-(red) and downregulated (blue) genes (B). UMAP projection (n_neighbors = 11) illustrating sample
-clustering based on global gene expression profiles. Control samples (green) and DF+DHF samples (purple)
-form distinct clusters, indicating clear transcriptomic differences between groups (C).
+> Figure 3. Heatmap of the top 100 differentially expressed genes (DEGs) across mouse embryo developmental stages from the GSE8091 dataset.
+The heatmap shows hierarchical clustering of the top 100 DEGs identified from the GSE8091. Expression values were normalized and scaled (Z-score) across samples. Color intensity indicates relative gene expression levels, with red representing higher expression and blue representing lower expression relative to the gene’s mean expression level. The dendrograms on the top and left indicate hierarchical clustering of samples and genes based on expression similarity. The annotation bar above the heatmap indicates embryo developmental stages (E), where different colors represent distinct stages of mouse embryonic development.
 
 The top 5 DEGs are listed in Table 1, and the complete DEG list is available in the GitHub repository.
 
@@ -201,5 +189,6 @@ observed transcriptional alterations.
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
