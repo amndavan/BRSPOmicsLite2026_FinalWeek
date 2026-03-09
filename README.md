@@ -1,4 +1,7 @@
 # BRSPOmicsLite2026 Final Week - Capstone Project
+
+## [Mini Presentation](https://youtu.be/Ein8M-8Z8IA?si=bmZCwTjYEdol3mC4)
+
 ## A. Introduction
 Transcriptomic techniques have revolutionized many areas of biology. By
 analyzing the transcriptome which is the complete set of RNA transcripts expressed
@@ -229,6 +232,7 @@ In conclusion, the present analysis demonstrates that there were indeed gene exp
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
