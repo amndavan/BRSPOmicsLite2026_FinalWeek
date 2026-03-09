@@ -67,7 +67,39 @@ GEO2R Parameter
 - Significance level cut-off : 0.05
 
 ## D. Workflow
+<img width="3648" height="637" alt="Workflow" src="https://github.com/user-attachments/assets/0e5feb15-e6ec-4c72-bbaf-add0de5b4cb6" />
 
+**Data acquisition:**
+- Access [GEO NCBI](https://www.ncbi.nlm.nih.gov/geo/)
+- Check article availability or topics we would like to explore, for example in this analysis: "early embryonic" OR "embryonic development" AND "neurogenesis" OR "brain development"
+- Identify a suitable dataset from the literature
+- Dataset used in this analysis: [GSE8091](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=gse8091)
+
+**Data pre-processing:**
+- Through Rstudio start data pre-processing and analysis using available [script](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/98b49f5a03682bc3f1970ff51cf132b25e05b494/scripts/GSE8091_REV.R)
+- Set the working directory and repository structure (scripts, data, figures, results)
+- Environment setup: install required CRAN and Bioconductor packages using BiocManager
+- Library calls:
+  - GEOquery to obtain datasets directly from GEO
+  - limma for normalization and differential expression analysis
+  - ggplot2 for visualization
+  - dplyr for data manipulation
+  - umap or umap-learn for dimensionality reduction
+- Download GEO dataset using GEOquery
+- Check whether log2 transformation is required
+- Perform data normalization if needed
+- Define sample grouping and design matrix
+- Perform linear model fitting and differential expression gene (DEG) analysis
+- Generate heatmap of top DEGs
+- Generate volcano plot
+- Perform UMAP visualization and Venn diagram analysis
+- Extract DEG lists (upregulated and downregulated genes separated) for downstream enrichment analysis (GO and KEGG)
+
+**Biological interpretation:**
+- Access [g:Profiler](https://biit.cs.ut.ee/gprofiler/gost) for Gene Ontology (GO) enrichment analysis
+- Access [ShinyGO](https://bioinformatics.sdstate.edu/go/) for KEGG pathway enrichment analysis
+- Paste the gene lists extracted from RStudio (upregulated and downregulated separately)
+- Interpret enriched biological processes, molecular functions, cellular components, and pathways relevant to embryonic brain development
 
 ## E. Results and Discussion
 ### Differentially Expressed Genes (DEGs)
@@ -197,6 +229,7 @@ In conclusion, the present analysis demonstrates that there were indeed gene exp
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
