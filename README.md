@@ -39,7 +39,7 @@ the compared conditions.
 biological implications indicated by the identified differentially expressed
 genes (DEGs).
 
-## B. Dataset Overview
+## B. Dataset Overview and Problem Statement
 Title: Transcriptome and proteome analysis of early embryonic mouse brain development
 
 Accession ID: GSE8091
@@ -172,6 +172,17 @@ In the later developmental stage comparison, the upregulated genes remain strong
 
 For the broader comparison between the early and late stages (E9.5 vs E13.5), the upregulated genes are again dominated by protein binding (MF), system development (BP), and synapse-related structures (CC). The downregulated genes are enriched in binding functions (MF), cell cycle and primary metabolic processes (BP), and intracellular anatomical structures (CC). This trend aligns with developmental biology principles, as later embryonic stages involve increasing neuronal differentiation and synaptic formation, while proliferative and general metabolic activities become less prominent relative to specialized developmental processes.
 
+- **A. KEGG Pathway Enrichment E9.5 vs E11.5**
+![Fig 5A1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E11_5_vs_E9_5_UP.png)
+![Fig 5A2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E11_5_vs_E9_5_DOWN.png)
+- **B. KEGG Pathway Enrichment E11.5 vs E13.5**
+![Fig 5B1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E13_5_vs_E11_5_UP.png)
+![Fig 5B2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E13_5_vs_E11_5_DOWN.png)
+- **C. KEGG Pathway Enrichment E9.5 vs E13.5**
+![Fig 5C1.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E13_5_vs_E9_5_UP.png)
+![Fig 5C2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E13_5_vs_E9_5_DOWN.png)
+> Figure 5. KEGG pathway enrichment analysis of differentially expressed genes (DEGs) in GSE8091 according to developmental stages.
+
 ## F. Conclusion
 In conclusion, the present analysis demonstrates that there was indeed changes related to developmental stages.
 Functional enrichment analysis further revealed that these DEGs are significantly associated with.
@@ -183,6 +194,7 @@ Functional enrichment analysis further revealed that these DEGs are significantl
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
