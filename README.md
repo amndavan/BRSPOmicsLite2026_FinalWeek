@@ -80,6 +80,7 @@ The UMAP projection (Figure 1B) revealed clear clustering of samples according t
 ![Fig 1A.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Boxplot%20Normalization.png)
 - **B. UMAP across developmental stages**
 ![Fig 1B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/UMAP.png)
+
 - **C. Venn plot showing DEG intersection**
 ![Fig 1C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/bb0296a18884303b2a58bc22ee06395d2aa40a69/figures/VennPlot.png)
 > Figure 1. Boxplot showing the distribution of log2-transformed gene expression values across all samples (GSMs). Each boxplot represents the expression distribution for one sample, where the median, interquartile range, and overall spread of the data are displayed. The red dashed line indicates the overall median expression level across samples (A). UMAP projection of samples based on their gene expression profiles, colored according to developmental stage (E9.5, E11.5, and E13.5) (B). The Venn diagram illustrates the number of genes uniquely expressed at three embryonic stages (E9.5, E11.5, and E13.5). The intersections represent genes shared between stages (C).
@@ -183,9 +184,10 @@ For the broader comparison between the early and late stages (E9.5 vs E13.5), th
 ![Fig 5C2.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/1cf9cc07b05cb7ac16b7928b8b2ff5eb449cb83d/figures/KEGG%20E13_5_vs_E9_5_DOWN.png)
 > Figure 5. KEGG pathway enrichment analysis of differentially expressed genes (DEGs) in GSE8091 according to developmental stages.
 
+To further investigate pathways associated with genes that are differentially expressed across developmental stages, pathway enrichment analysis was performed using ShinyGO. Genes upregulated from the early stage (E9.5) to the transition (E11.5) and late stage (E13.5) are mainly associated with nervous system–related pathways, such as axon guidance and GABAergic synapse, reflecting the progression of neural development. In contrast, the E11.5 to E13.5 comparison shows enrichment in pathways not directly labeled as nervous system–specific, such as nicotine addiction, which likely reflects shared neuronal signaling components. Meanwhile, downregulated genes are enriched in pathways related to RNA polymerase activity, folate transport and metabolism, and DNA replication. These processes are typically associated with cell proliferation and basic cellular metabolism, suggesting a shift from proliferative activity toward cellular differentiation during development.
+
 ## F. Conclusion
-In conclusion, the present analysis demonstrates that there was indeed changes related to developmental stages.
-Functional enrichment analysis further revealed that these DEGs are significantly associated with.
+In conclusion, the present analysis demonstrates that there were indeed gene expression changes related to developmental stages. Gene Ontology and pathway enrichment analysis using ShinyGO show that upregulated genes are mainly associated with neural development pathways, while downregulated genes are related to metabolic processes, nucleic acid activity, and DNA replication. Overall, these patterns suggest a developmental shift from proliferative cellular activity toward neuronal differentiation and nervous system organization.
 
 ## G. References
 
@@ -194,6 +196,7 @@ Functional enrichment analysis further revealed that these DEGs are significantl
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
