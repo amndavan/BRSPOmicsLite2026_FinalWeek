@@ -80,9 +80,8 @@ The UMAP projection (Figure 1B) revealed clear clustering of samples according t
 ![Fig 1A.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/Boxplot%20Normalization.png)
 - **B. UMAP across developmental stages**
 ![Fig 1B.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/9fc78ac27789847c5abed6fa53a2c10afe75fb4b/figures/UMAP.png)
-
 - **C. Venn plot showing DEG intersection**
-![Fig 1C.](https://github.com/amndavan/BRSPOmicsLite2026_FinalWeek/blob/bb0296a18884303b2a58bc22ee06395d2aa40a69/figures/VennPlot.png)
+
 > Figure 1. Boxplot showing the distribution of log2-transformed gene expression values across all samples (GSMs). Each boxplot represents the expression distribution for one sample, where the median, interquartile range, and overall spread of the data are displayed. The red dashed line indicates the overall median expression level across samples (A). UMAP projection of samples based on their gene expression profiles, colored according to developmental stage (E9.5, E11.5, and E13.5) (B). The Venn diagram illustrates the number of genes uniquely expressed at three embryonic stages (E9.5, E11.5, and E13.5). The intersections represent genes shared between stages (C).
 
 After applying the selection criteria and removing blank array results and duplicate entries, a total number of differentially expressed genes (DEGs) were identified across the developmental stages. A large number of genes showed significant differential expression between the stages. Many genes were strongly upregulated in E13.5, while another subset was significantly downregulated compared with E9.5. Similar patterns of differential expression were also observed in the comparisons between E9.5 vs E11.5 and E11.5 vs E13.5 (Figure 2A-C). The wide distribution of significant genes indicated substantial transcriptomic changes between these developmental stages, reflecting major biological transitions during the developmental process. However, the proportions of upregulated and downregulated genes between stages were relatively balanced, with slightly more upregulated genes observed in the E13.5 vs E9.5 comparison. This pattern is theoretically understandable, as E9.5 represents an early developmental stage, whereas E13.5 corresponds to a later stage approaching maturation. A similar trend in gene expression changes was also reported in the original study.
@@ -196,6 +195,7 @@ In conclusion, the present analysis demonstrates that there were indeed gene exp
 3. Raplee ID, Borkar SA, Yin L, et al. (2025). *The Role of Microarray in Modern Sequencing: Statistical Approach Matters in a Comparison Between Microarray and RNA-Seq*. BioTech, 14(3), 55. https://doi.org/10.3390/biotech14030055
 4. Rosati D, Palmieri M, Brunelli G, et al. (2024). *Differential gene expression analysis pipelines and bioinformatic tools for biomarker identification: A review*. Computational and Structural Biotechnology Journal, 23. https://doi.org/10.1016/j.csbj.2024.02.018
 5. Wang H, Xu Y, Zhang Z, et al. (2024). *Development and application of transcriptomics technologies in plant science*. Crop Design, 3(2), 100057. https://doi.org/10.1016/j.cropd.2024.100057
+
 
 
 
